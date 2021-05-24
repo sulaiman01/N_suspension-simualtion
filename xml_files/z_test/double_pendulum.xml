@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="05/13/21||11:07:55" using="Simscape Multibody Link Version 7.0" from="SolidWorks 28.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="double_pendulum" uid="double_pendulum" version="109">
+<AssemblyFile name="double_pendulum.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="link_1-1" uid="link_1-1" grounded="true" entityUid="link_1*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.085719656884286816 0.31105894539764811 0.37772474519274507</Translation>
+</Transform>
+</Instance>
+<Instance name="link_1-3" uid="link_1-3" entityUid="link_1*:*Default">
+<Transform>
+<Rotation>0.98905761769017508 0 0.14752975594447282 0 1 0 -0.14752975594447282 0 0.98905761769017508</Rotation>
+<Translation>0.71427691587813835 0.31105894539764817 0.37606891358477956</Translation>
+</Transform>
+</Instance>
+<Instance name="link_1-2" uid="link_1-2" entityUid="link_1*:*Default">
+<Transform>
+<Rotation>0.99999143190606277 0 0.0041395790199138379 0 1 0 -0.0041395790199138379 0 0.99999143190606277</Rotation>
+<Translation>0.31428034311571346 0.34105894539764814 0.37772474519274518</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>link_1-1</Uid>
+</InstancePath>
+<Position>0.40000000000000002 0.030000000000000027 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>link_1-2</Uid>
+</InstancePath>
+<Position>0 0.030000000000000027 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>link_1-1</Uid>
+</InstancePath>
+<Position>0 0.030000000000000027 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>link_1-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>link_1-2</Uid>
+</InstancePath>
+<Position>0.40000000000000008 0.030000000000000027 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>link_1-3</Uid>
+</InstancePath>
+<Position>0 0.029999999999999971 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>link_1-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>link_1-3</Uid>
+</InstancePath>
+<Position>0 0.029999999999999971 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="link_1" uid="link_1*:*Default" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="link_1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.3178097245096174</Mass>
+<CenterOfMass>0.19999999999999998 0.014999999999999998 0</CenterOfMass>
+<Inertia>0.0012276901155206155 0.023970097752749487 0.022940079095905317 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="link_1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
